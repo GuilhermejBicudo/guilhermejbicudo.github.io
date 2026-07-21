@@ -31,7 +31,33 @@ button { font: inherit; }
 .nav-links > a:not(.nav-contact) { color: #505050; transition: color .2s; }
 .nav-links > a:hover { color: var(--ink); }
 .nav-contact { display: inline-flex; gap: 10px; padding: 10px 14px; border: 1px solid var(--ink); border-radius: 99px; transition: background .2s, color .2s; }
-.nav-contact:hover { background: var(--ink); color: var(--paper); }
+.nav-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border: 1px solid var(--ink);
+  border-radius: 99px;
+  transition: 
+    background .25s ease,
+    color .25s ease,
+    border-color .25s ease;
+}
+
+.nav-contact:hover {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+.nav-contact span {
+  transition: color .25s ease;
+}
+
+.nav-contact:hover span {
+  color: var(--paper);
+}
 .menu-button { display: none; border: 0; background: none; }
 
 .hero { min-height: 765px; padding-top: 183px; position: relative; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(240px, .6fr); gap: 80px; }
@@ -169,3 +195,20 @@ html[lang="pt-BR"] .hero {
 a:focus-visible, .menu-button:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 @media (max-width: 780px) { .nav-links { min-width: 0; } .nav-contact { justify-content: space-between; } }
 
+.nav-contact {
+  color: var(--ink);
+}
+
+.nav-contact:hover {
+  background: var(--ink);
+  color: var(--paper) !important;
+}
+
+.nav-contact:hover,
+.nav-contact:hover span {
+  color: var(--paper) !important;
+}
+
+.nav-contact span {
+  color: inherit;
+}

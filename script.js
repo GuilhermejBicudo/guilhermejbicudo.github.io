@@ -110,16 +110,22 @@ const i18n = {
 
       "Olist Business Intelligence",
 
-      "An end-to-end e-commerce analysis: data preparation, SQL queries and a dashboard to track sales, delivery and customer behavior.",
+      "An ongoing Business Intelligence project focused on transforming Olist e-commerce data into actionable insights through data preparation, SQL analysis and interactive dashboards.",
 
       "Customer Retention Analytics",
 
       "A customer-retention analytics solution that transforms ERP sales data into actionable insights on purchasing behavior, retention and growth opportunities.",
 
-      "View details <span aria-hidden='true'>↗</span>"
+      "View repository <span aria-hidden='true'>↗</span>",
+
+      "Read article <span aria-hidden='true'>↗</span>"
 
     ],
 
+    projectStatus: "In progress",
+    projectStatusDone: "Completed",
+
+    cv: "assets/cv-guilherme-bicudo-en.pdf",
 
     contact: [
 
@@ -260,15 +266,22 @@ const i18n = {
 
       "Olist Business Intelligence",
 
-      "Uma análise ponta a ponta de e-commerce: preparação de dados, consultas SQL e painel para acompanhar vendas, entregas e comportamento de clientes.",
+      "Um projeto de Business Intelligence em andamento, focado em transformar dados de e-commerce da Olist em insights acionáveis através de preparação de dados, análise SQL e dashboards interativos.",
 
       "Analytics de Retenção de Clientes",
 
       "Solução analítica que transforma dados de vendas do ERP em insights acionáveis sobre comportamento de compra, retenção e oportunidades de crescimento.",
 
-      "Ver detalhes <span aria-hidden='true'>↗</span>"
+      "Ver repositório <span aria-hidden='true'>↗</span>",
+
+      "Ler artigo <span aria-hidden='true'>↗</span>"
 
     ],
+
+    projectStatus: "Em andamento",
+    projectStatusDone: "Concluído",
+
+    cv: "assets/cv-guilherme-bicudo.pdf",
 
 
     contact: [
@@ -351,7 +364,7 @@ function setLanguage(language) {
   );
 
 
-  all(".hero-actions a")
+  all(".hero-actions > a")
     .forEach((item, index) => {
 
       html(
@@ -361,7 +374,15 @@ function setLanguage(language) {
 
     });
 
+// =========================
+// CV DOWNLOAD LINK
+// =========================
 
+const cvDownload = document.querySelector(".cv-download");
+
+if (cvDownload) {
+  cvDownload.href = text.cv;
+}
 
   // =========================
   // ABOUT
@@ -522,15 +543,26 @@ function setLanguage(language) {
 
 
   all(".project-link")
-    .forEach((item) => {
+    .forEach((item, index) => {
 
       html(
         item,
-        text.project[5]
+        text.project[5 + index]
       );
 
     });
 
+  // STATUS DO PROJETO
+
+  all(".project-status")
+    .forEach((item, index) => {
+
+      html(
+        item,
+        index === 0 ? text.projectStatus : text.projectStatusDone
+      );
+
+    });
 
 
   // =========================
@@ -569,10 +601,11 @@ function setLanguage(language) {
   all("[data-language]")
     .forEach((item) => {
 
-      item.toggleAttribute(
-        "aria-current",
-        item.dataset.language === language
-      );
+      if (item.dataset.language === language) {
+        item.setAttribute("aria-current", "page");
+      } else {
+        item.removeAttribute("aria-current");
+      }
 
     });
 

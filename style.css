@@ -135,7 +135,10 @@ h2 { font-size: clamp(2.35rem, 4.25vw, 4.25rem); font-weight: 700; }
 .project-featured { grid-column: span 2; display: grid; grid-template-columns: 1.48fr 1fr; column-gap: 50px; align-items: start; }
 .project-visual { overflow: hidden; background: #232323; margin-bottom: 20px; height: 273px; position: relative; }
 .project-featured .project-visual { grid-row: span 4; height: 361px; margin: 0; }
-.project-meta { display: flex; justify-content: space-between; color: #666; margin-bottom: 12px; }
+.project-meta { display: flex; justify-content: space-between; align-items: center; color: #666; margin-bottom: 12px; }
+.project-status { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 99px; background: var(--ink); color: var(--paper); font-size: .62rem; letter-spacing: .06em; }
+.project-status::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: #8fbf7f; }
+.project-status.status-done::before { background: #999; }
 .project-card h3 { font-size: 1.5rem; margin-bottom: 12px; }
 .project-card p { max-width: 530px; color: #555; font-size: .89rem; margin-bottom: 20px; }
 .project-link { width: max-content; font-size: .72rem; }

@@ -116,9 +116,15 @@ const i18n = {
 
       "A customer-retention analytics solution that transforms ERP sales data into actionable insights on purchasing behavior, retention and growth opportunities.",
 
+      "Olist E-Commerce Analytics (Databricks)",
+
+      "End-to-end data pipeline on Databricks using a medallion architecture (bronze, silver, gold), built on the public Olist e-commerce dataset. From raw data ingestion to a business metrics dashboard.",
+
       "View repository <span aria-hidden='true'>↗</span>",
 
-      "Read article <span aria-hidden='true'>↗</span>"
+      "Read article <span aria-hidden='true'>↗</span>",
+
+      "View repository <span aria-hidden='true'>↗</span>"
 
     ],
 
@@ -272,9 +278,15 @@ const i18n = {
 
       "Solução analítica que transforma dados de vendas do ERP em insights acionáveis sobre comportamento de compra, retenção e oportunidades de crescimento.",
 
+      "Olist E-Commerce Analytics (Databricks)",
+
+      "Pipeline de dados ponta a ponta no Databricks com arquitetura medalhão (bronze, silver, gold), construído sobre o dataset público de e-commerce da Olist. Da ingestão de dados brutos a um dashboard de métricas de negócio.",
+
       "Ver repositório <span aria-hidden='true'>↗</span>",
 
-      "Ler artigo <span aria-hidden='true'>↗</span>"
+      "Ler artigo <span aria-hidden='true'>↗</span>",
+
+      "Ver repositório <span aria-hidden='true'>↗</span>"
 
     ],
 
@@ -293,6 +305,171 @@ const i18n = {
       "Estou aberto a conversar sobre projetos, oportunidades e desafios de dados.",
 
       "Voltar ao topo ↑"
+
+    ]
+
+  },
+
+
+
+  es: {
+
+    lang: "es",
+
+    menu: [
+      "Sobre mí",
+      "Experiencia",
+      "Proyectos",
+      "Hablemos <span aria-hidden='true'>↗</span>"
+    ],
+
+
+    hero: [
+
+      "<span></span> Disponible para oportunidades",
+
+      "Datos que<br><em>impulsan</em> decisiones.",
+
+      "Soy <strong>Guilherme Bicudo</strong>, Analista de Datos. Transformo datos comerciales en claridad, automatización y mejores decisiones de negocio.",
+
+      "Explorar proyectos <span aria-hidden='true'>↓</span>",
+
+      "Descargar currículum <span aria-hidden='true'>↓</span>"
+
+    ],
+
+
+    about: [
+
+      "El dato es solo el comienzo. <em>El valor está en la decisión.</em>",
+
+      "Analista de Datos con formación en Física y experiencia en Business Intelligence, análisis comercial y automatización. En Daubert Brasil, conecto indicadores de desempeño con oportunidades reales de crecimiento.",
+
+      "Uso <strong>Power BI, Python, SQL y Excel</strong> para transformar bases de datos complejas en análisis útiles, visuales claros y procesos más eficientes.",
+
+      "Vivo en <strong>Limeira, Brasil</strong>, y estoy abierto a oportunidades remotas, híbridas, presenciales y a mudanzas.",
+
+      "Explorar mi experiencia <span aria-hidden='true'>↓</span>"
+
+    ],
+
+
+    experience: [
+
+      "Construyendo respuestas para desafíos de negocio.",
+
+      "Del análisis exploratorio a los dashboards y la automatización, mi trabajo acerca a los equipos de negocio a sus datos."
+
+    ],
+
+
+    roles: [
+
+      {
+        company: "Daubert Brasil",
+        title: "Analista de Datos",
+        bullets: [
+          "Desarrollo de dashboards comerciales y estratégicos en Power BI.",
+          "Seguimiento de ingresos, ganancias, inventario y tasa de éxito de pedidos.",
+          "Automatización de reportes con Python que redujo en un 96% el tiempo de un proceso comercial recurrente.",
+          "Análisis que contribuyeron a una reducción estimada de R$ 540 mil anuales en costos fijos operativos."
+        ]
+      },
+
+
+      {
+        company: "PEPOLA India",
+        title: "Pasante de Datos",
+        bullets: [
+          "Desarrollo de un agente automatizado de inscripción a webinars, integrado vía API con la plataforma de pagos.",
+          "Creación de una herramienta para identificar tendencias de la industria de videojuegos y apoyar la producción de contenido.",
+          "Apoyo en el análisis de indicadores comerciales y operativos para equipos internos."
+        ]
+      },
+
+
+      {
+        company: "Educación",
+        title: "Profesor de Matemáticas",
+        bullets: [
+          "Planificación de clases de Matemáticas y actividades de razonamiento analítico.",
+          "Seguimiento del desempeño académico mediante métricas e indicadores educativos.",
+          "Desarrollo de habilidades de comunicación, liderazgo y resolución de problemas en un entorno colaborativo."
+        ]
+      }
+
+    ],
+
+
+    education: [
+
+      {
+        title: "MBA in Machine Learning in Production",
+        institution: "UFSCar"
+      },
+
+      {
+        title: "Tecnología de la Información",
+        institution: "UNIVESP"
+      },
+
+      {
+        title: "Licenciatura en Física",
+        institution: "IFSP"
+      }
+
+    ],
+
+
+    labels: [
+
+      "<span>01</span> Sobre mí",
+      "<span>02</span> Experiencia",
+      "<span>03</span> Formación",
+      "<span>04</span> Proyectos seleccionados"
+
+    ],
+
+
+    project: [
+
+      "Análisis que cuentan una historia <em>y señalan el próximo paso.</em>",
+
+      "Olist Business Intelligence",
+
+      "Un proyecto de Business Intelligence en curso, enfocado en transformar datos de e-commerce de Olist en insights accionables a través de la preparación de datos, análisis SQL y dashboards interactivos.",
+
+      "Analytics de Retención de Clientes",
+
+      "Una solución de analytics de retención que transforma datos de ventas del ERP en insights accionables sobre comportamiento de compra, retención y oportunidades de crecimiento.",
+
+      "Olist E-Commerce Analytics (Databricks)",
+
+      "Pipeline de datos end to end en Databricks con arquitectura medallón (bronze, silver, gold), construido sobre el dataset público de e-commerce de Olist. Desde la ingesta de datos crudos hasta un dashboard de métricas de negocio.",
+
+      "Ver repositorio <span aria-hidden='true'>↗</span>",
+
+      "Leer artículo <span aria-hidden='true'>↗</span>",
+
+      "Ver repositorio <span aria-hidden='true'>↗</span>"
+
+    ],
+
+    projectStatus: "En curso",
+    projectStatusDone: "Completado",
+
+    cv: "assets/cv-guilherme-bicudo-es.pdf",
+
+
+    contact: [
+
+      "<span></span> Contacto",
+
+      "Convirtamos los datos en <em>dirección.</em>",
+
+      "Estoy abierto a conversar sobre proyectos, oportunidades y desafíos de datos.",
+
+      "Volver arriba ↑"
 
     ]
 
@@ -547,7 +724,7 @@ if (cvDownload) {
 
       html(
         item,
-        text.project[5 + index]
+        text.project[7 + index]
       );
 
     });
